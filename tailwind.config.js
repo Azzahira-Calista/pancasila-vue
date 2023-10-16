@@ -9,6 +9,9 @@ module.exports = {
         ],
         inter: [
           'Inter'
+        ],
+        prompt: [
+          'Prompt'
         ]
         
       },

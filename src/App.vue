@@ -1,12 +1,14 @@
 <template>
-  <LandingCompOneVue/>
+  <LandingViewVue/>
 </template>
 
 <script>
-import LandingCompOneVue from './components/LandingCompOne.vue'
+import LandingViewVue from './views/LandingView.vue'
+
+
 export default {
   components: {
-    LandingCompOneVue
+    LandingViewVue
   }
 
 }
