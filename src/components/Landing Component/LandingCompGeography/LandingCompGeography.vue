@@ -49,18 +49,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
-
-Fitur Wajib yang related ke Saldo, Kirim dan Terima Uang, Scan QR, Top Up Kebutuhan Sehari hari
-
-Riwayat Transaksi
-
-Target Kemungkinan Sekitar: 
-30 screen
-
-Initial Page
-Besok Design System
-Lusa Login Page, Register Page, Onboarding, Splash Screen
 
