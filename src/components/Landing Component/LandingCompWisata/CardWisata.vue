@@ -4,7 +4,7 @@
   >
     <img
       class="rounded-full w-24 h-24 mr-8"
-      src="@/assets/images/bg_landing_geography.png"
+      :src="imageCard"
       alt="img"
     />
     <p class="font-inter font-normal text-base text-[#6F6E6E] mr-[1.5]">
@@ -18,6 +18,7 @@ export default {
   props: {
     imageCard: {
       type: String,
+      required: true,
     },
 
     descriptionCard: {

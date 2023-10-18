@@ -45,7 +45,7 @@ export default {
     return {
       data: [
         {
-          imageCard: "@/assets/images/bg_landing_geography.png",
+          imageCard: require("@/assets/images/bg_landing_geography.png"),
           descriptionCard:
             "Provinsi yang terletak di bagian timur Indonesia, ksajkouubdjs ijifdjdufhh dhojdhkjkjnjk ",
         },
