@@ -1,9 +1,9 @@
 <template>
   <div class="w-screen h-[28.5rem] relative ">
-    <img class="w-full h-full object-cover absolute" src="@/assets/images/bg_landing_geography.png" alt="Background Landing Geography">
+    <img class="w-full h-full object-cover absolute" :src= "backgroundImage"  :alt= "backgroundImageText">
     <div class="absolute w-full h-full bg-black bg-opacity-[0.35]">
         <div class="w-full h-full px-[14.3rem] pt-[2.75rem] pb-[1.875rem] flex flex-col items-center">
-            <h1 class="font-poppins font-bold text-4xl text-white mb-5">Geografis</h1>
+            <h1 class="font-poppins font-bold text-4xl text-white mb-5">{{ heading }}</h1>
             <div class="flex flex-col w-full">
                 <div class="flex justify-between w-full">
 
@@ -24,6 +24,9 @@ import CardGeography from './CardGeography.vue'
 export default {
     data() { 
         return {
+            backgroundImage: require('@/assets/images/bg_landing_geography.png'),
+            backgroundImageText: "Background Landing Geography",
+            heading: "Geografis",
             data: [
                 {
                     titleCard: 'Perbatasan Darat',
@@ -46,6 +49,4 @@ export default {
 }
 </script>
 
-<style>
 
-</style>
