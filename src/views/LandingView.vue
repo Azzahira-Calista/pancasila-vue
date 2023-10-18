@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="bg-primary">
     <LandingCompOne />
-    <LandingCompGeographyVue />
     <LandingCompProfileGorvVue />
     <LandingCompServiceVue />
+    <LandingCompProvVue />
+    <LandingCompGeographyVue />
+    <LandingCompWisataVue />
   </div>
 </template>
 
@@ -12,13 +14,17 @@ import LandingCompOne from "@/components/Landing Component/LandingCompHero/Landi
 import LandingCompGeographyVue from "@/components/Landing Component/LandingCompGeography/LandingCompGeography.vue";
 import LandingCompProfileGorvVue from "@/components/Landing Component/LandingCompProfileGorv/LandingCompProfileGorv.vue";
 import LandingCompServiceVue from "@/components/Landing Component/LandingCompService/LandingCompService.vue";
+import LandingCompWisataVue from "@/components/Landing Component/LandingCompWisata/LandingCompWisata.vue";
+import LandingCompProvVue from "@/components/Landing Component/LandingCompProv/LandingCompProv.vue";
 
 export default {
   components: {
     LandingCompOne,
     LandingCompGeographyVue,
     LandingCompProfileGorvVue,
-    LandingCompServiceVue
+    LandingCompServiceVue,
+    LandingCompWisataVue,
+    LandingCompProvVue,
   },
 };
 </script>
