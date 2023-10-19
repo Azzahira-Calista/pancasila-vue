@@ -2,10 +2,11 @@
   <div class="bg-primary">
     <LandingCompOne />
     <LandingCompProfileGorvVue />
-    <LandingCompServiceVue />
     <LandingCompProvVue />
     <LandingCompGeographyVue />
+    <LandingCompServiceVue />
     <LandingCompWisataVue />
+    <FooterComponent />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import LandingCompProfileGorvVue from "@/components/Landing Component/LandingCom
 import LandingCompServiceVue from "@/components/Landing Component/LandingCompService/LandingCompService.vue";
 import LandingCompWisataVue from "@/components/Landing Component/LandingCompWisata/LandingCompWisata.vue";
 import LandingCompProvVue from "@/components/Landing Component/LandingCompProv/LandingCompProv.vue";
+import FooterComponent from "@/components/Global Component/FooterComponent.vue";
 
 export default {
   components: {
@@ -25,6 +27,7 @@ export default {
     LandingCompServiceVue,
     LandingCompWisataVue,
     LandingCompProvVue,
+    FooterComponent,
   },
 };
 </script>
