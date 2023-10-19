@@ -6,7 +6,7 @@
     <div class="pl-40 flex flex-col justify-center h-full w-full absolute">
       <h1 class="font-poppins font-bold text-4xl text-[#F1F1F1]">{{ titleOne }}</h1>
       <br>
-      <h1 class="font-poppins font-bold text-4xl text-[#F1F1F1] mb-5">Provinsi yang terletak di bagian timur Indonesia, terdiri dari sejumlah pulau besar dan kecil, termasuk Pulau Timor. Ibu kotanya adalah Kupang. NTT memiliki keanekaragaman etnis, budaya, dan bahasa yang kaya. Keindahan alamnya meliputi pantai-pantai eksotis, gunung-gunung, dan taman nasional yang mengundang wisatawan.</h1>
+      <h1 class="font-poppins font-bold text-4xl text-[#F1F1F1] mb-5">{{ titleTwo }}</h1>
 
       <p class="font-inter text-base font-normal w-[37.37rem] text-[#F1F1F1]">
         {{ description }}
