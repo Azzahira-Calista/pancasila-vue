@@ -1,17 +1,16 @@
 <template>
-  <AboutViewVue/>
-  <LandingViewVue/>
+  <AboutView/>
+  <landingView/>
 </template>
 
 <script>
-import LandingViewVue from './views/LandingView.vue'
-import AboutViewVue from './views/AboutView.vue'
-
+import LandingView from './views/LandingView.vue';
+import AboutView from './views/AboutView.vue';
 
 export default {
   components: {
-    LandingViewVue,
-    AboutViewVue
+    AboutView,
+    LandingView
   }
 
 }
