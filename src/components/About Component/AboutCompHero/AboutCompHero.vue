@@ -5,10 +5,10 @@
     <div
       class="descript absolute w-screen h-screen flex flex-col justify-center items-center"
     >
-      <h1 class="font-poppins font-bold text-4xl text-[#F1F1F1] mb-8">
-        Tittle
+      <h1 class="font-poppins font-bold text-4xl text-[#F1F1F1] mb-5">
+        Tentang Nusa Tenggara Timur
       </h1>
-      <p class="font-inter font-normal text-base text-[#F1F1F1] mb-14 w-80">
+      <p class="font-inter font-normal text-base text-[#F1F1F1] mb-14 w-96 text-center">
         Nusa Tenggara Timur (disingkat NTT) adalah sebuah provinsi di Indonesia
         yang meliputi bagian timur Kepulauan Nusa Tenggara.
       </p>
