@@ -4,6 +4,7 @@
     <AboutCompFloraFaunaVue />
     <AboutCompVisiVue />
     <AboutCompHistoryVue/>
+    <AboutCompContributionVue/>
     <AboutCompEmblemAreaVue />
     <FooterComponent />
   </div>
@@ -16,6 +17,7 @@ import AboutCompHerovue from "@/components/About Component/AboutCompHero/AboutCo
 import AboutCompVisiVue from "@/components/About Component/AboutCompVisiMisi/AboutCompVisi.vue";
 import AboutCompFloraFaunaVue from '@/components/About Component/AboutComponentFloraFauna/AboutCompFloraFauna.vue';
 import AboutCompHistoryVue from '@/components/About Component/AboutCompHistory/AboutCompHistory.vue';
+import AboutCompContributionVue from '@/components/About Component/AboutCompContribution/AboutCompContribution.vue';
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     AboutCompFloraFaunaVue,
     AboutCompHerovue,
     AboutCompVisiVue,
-    AboutCompHistoryVue
+    AboutCompHistoryVue,
+    AboutCompContributionVue,
   },
 };
 </script>
