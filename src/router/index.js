@@ -1,27 +1,29 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import AboutViewVue from '../views/AboutView.vue'
-import LandingViewVue from '../views/LandingView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import AboutView from "../views/AboutView.vue";
+import LandingView from "../views/LandingView.vue";
+import TourView from "../views/TourView.vue";
 
 const routes = [
-
   {
-    path: '/',
-    name: 'landing',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: LandingViewVue
+    path: "/",
+    name: "landing",
+    component: LandingView,
   },
   {
-    path: '/about',
-    name: 'about',
-    component: AboutViewVue
-  }
-]
+    path: "/about",
+    name: "about",
+    component: AboutView,
+  },
+  {
+    path: "/tour",
+    name: "tour",
+    component: TourView,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
