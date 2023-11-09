@@ -1,24 +1,10 @@
 <template>
-  <TourView/>
-  <AboutView/>
-  <landingView/>
+  <router-view/>
 </template>
 
 <script>
-import LandingView from './views/LandingView.vue';
-import AboutView from './views/AboutView.vue';
-import TourView from './views/TourView.vue';
-
 export default {
-  components: {
-    AboutView,
-    LandingView,
-    TourView
-  }
-
+  name: 'App',
 }
 </script>
 
-<style>
-
-</style>
