@@ -2,7 +2,7 @@
   <div
     class="w-screen h-[32.5rem] flex flex-col align-middle items-center mt-10 relative"
   >
-    <h1 class="font-poppins font-bold text-4xl mb-10">Visi & Misi</h1>
+    <h1 class="font-poppins font-bold text-4xl text-[#6F6E6E] mb-10">Visi & Misi</h1>
     <div class="flex space-x-12" absolute>
       <cardVisiMisiVue
         :tittleCard="data[0].titleCard"
