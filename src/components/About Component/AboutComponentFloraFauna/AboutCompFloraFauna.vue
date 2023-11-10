@@ -1,40 +1,95 @@
 <template>
   <div
-    class="background bg-white w-screen h-[44.6rem] flex flex-col justify-center items-center"
+    class="bg-white w-screen h-screen flex flex-col justify-center items-center"
   >
-    <h1 class="font-poppins font-bold text-4xl text-[#454545] mb-[2.3rem]">
+    <h1 class="font-poppins font-bold text-4xl text-[#454545] mb-10">
       Flora & Fauna
     </h1>
     <div class="flex justify-center items-center">
-      <img class="rotate-180 w-8 h-8 mr-28" :src="iconPath" :alt="alt" />
-
-      <div class="card h-[31.8rem] w-[62.5rem] rounded-2xl relative">
-        <img :src="imagePath" class="absolute" />
-        <div
-          class="flex flex-col ml-[2.1rem] justify-end h-full mb-[2.5rem] absolute"
-        >
-          <h2 class="font-poppins font-bold text-4xl text-[#ffffff]">Kuskus</h2>
-          <p class="mb-9 font-inter text-base text-[#ffffff] w-96">
-            Kuskus adalah mamalia berkantung <i>(Marsupialia) </i> nokturnal
-            termasuk dalam famili Phalangeridae. Kelompok hewan ini
-            persebarannya terbatas di Indonesia bagian timur.
-          </p>
-        </div>
-      </div>
-      <img class="w-8 h-8 ml-28" :src="iconPath" :alt="alt" />
+      <swiper
+        class="w-screen h-full"
+        :spaceBetween="30"
+        :centeredSlides="true"
+        :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false,
+        }"
+        :pagination="{
+          clickable: true,
+        }"
+        :navigation="true"
+        :modules="modules"
+      >
+        <swiper-slide v-for="(card, index) in data" :key="index">
+          <CardFlore
+            :imageCard="card.imageCard"
+            :titleCard="card.titleCard"
+            :descriptionCard="card.descriptionCard"
+          />
+        </swiper-slide>
+      </swiper>
     </div>
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import CardFlore from "./CardFlore.vue";
+
 export default {
+  components: {
+    CardFlore,
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Pagination, Navigation],
+    };
+  },
   data() {
     return {
       iconPath: require("@/assets/icon/double_arrow_black.svg"),
-      imagePath: require("@/assets/images/fauna1.png"),
+      data: [
+        {
+          imageCard: require("@/assets/images/fauna_kuskus.png"),
+          titleCard: "kuskus",
+          descriptionCard:
+            "Kuskus adalah mamalia berkantung nokturnal termasuk dalam famili Phalangeridae. Kelompok hewan ini persebarannya terbatas di Indonesia bagian timur.",
+        },
+        {
+          imageCard: require("@/assets/images/fauna_komodo.png"),
+          titleCard: "Komodo",
+          descriptionCard:
+            "Komodo merupakan hewan karnivora yang mempunyai kecepatan berlari 20 km/jam. Gigitannya mengandung infeksi, disebabkan air liurnya mengandung 60 jenis bakteri.",
+        },
+        {
+          imageCard: require("@/assets/images/fauna_kera.png"),
+          titleCard: "Kera Macaca",
+          descriptionCard:
+            "Macaca Maura adalah seekor monyet makak dengan bulu tubuh berwarna cokelat/hitam dengan bercak pucat di bagian pantat dan kulit yang tidak berbulu berwarna merah muda di bagian pantat. Monyet ini memiliki kutil iskial, yang berbentuk oval.",
+        },
+        {
+          imageCard: require("@/assets/images/flora_cendana.png"),
+          titleCard: "Cendana Wangi",
+          descriptionCard:
+            "cendana wangi (Santalum album), merupakan pohon penghasil kayu cendana dan minyak cendana.",
+        },
+        {
+          imageCard: require("@/assets/images/flora_ampupu.png"),
+          titleCard: "Pohon Ampupu",
+          descriptionCard:
+            "Pohon ampupu merupakan tanaman endemik dari Nusa Tenggara Timur",
+        },
+        
+      ],
     };
   },
 };
 </script>
-
-<style></style>
