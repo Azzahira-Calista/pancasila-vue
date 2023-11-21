@@ -7,7 +7,10 @@
         <h1 class="font-poppins font-bold text-4xl text-[#454545] mb-7">
           {{ heading }}
         </h1>
-        <div class="w-[18.5rem] h-[21.12rem] bg-[#EEEEEE]"></div>
+        <div class="w-[18.5rem] h-[21.12rem] bg-[#db6666] flex items-center justify-center">
+  <img :src="imgs" alt="" class="w-full h-full object-cover" />
+</div>
+
       </div>
 
       <div class="flex flex-col">
@@ -16,13 +19,13 @@
         </h1>
         <div class="flex flex-col w-[38.18rem]">
           <p class="font-inter font-normal text-base text-[#6F6E6E]">
-            {{ description }}
+            {{ description1 }}
           </p>
 
           <br />
 
           <p class="font-inter font-normal text-base text-[#6F6E6E]">
-            {{ description }}
+            {{ description2 }}
           </p>
         </div>
       </div>
@@ -35,9 +38,11 @@ export default {
   data() {
     return {
       heading: "Profile Gurbernur",
-      subheading: "Provinsi yang terletak di bagian 1980-1980",
-      description:
-        "Provinsi yang terletak di bagian timur Indonesia, terdiri dari sejumlah pulau besar dan kecil, termasuk Pulau Timor. Ibu kotanya adalah Kupang. NTT memiliki keanekaragaman etnis, budaya, dan bahasa yang kaya. Keindahan alamnya meliputi pantai-pantai eksotis, gunung-gunung, dan taman nasional yang mengundang wisatawan.",
+      subheading: "Dr. Viktor Bungtilu Laiskodat, S.H., M.Si. (17 Februari 1965)",
+      description1:
+        "Viktor Bungtilu Laiskodat dikenal sebagai politikus senior dari Partai Nasional Demokrat yang pada 5 September 2018 dilantik sebagai Gubernur Nusa Tenggara Timur bersama wakilnya Josef Nae Soi untuk periode 2018-2023.",
+      description2: "Pria yang lahir di Oenesu, Kupang Barat pada 17 Februari 1965 ini menghabiskan masa kecil hingga remaja di Kupang. Setelah lulus dari Sekolah Tinggi Ilmu Hukum, Viktor berprofesi sebagai seorang konsultan hukum dan pernah mendirikan lembaga bantuan hukum dengan namanya sendiri, Viktor B. Laiskodat Law Firm.",
+      imgs: require("@/assets/images/gubernur.png"),
     };
   },
 };
