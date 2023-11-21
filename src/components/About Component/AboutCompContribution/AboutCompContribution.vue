@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" w-screen px-[8.75rem] py-[4rem] flex flex-col items-center"
+    class=" w-screen px-[8.75rem] py-[4rem] flex flex-col items-center bg-white"
   >
     <h1 class="text-[#626262] font-poppins text-4xl font-bold mb-4">
       {{ headerText }}

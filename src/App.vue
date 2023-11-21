@@ -1,21 +1,10 @@
 <template>
-  <AboutView/>
-  <landingView/>
+  <router-view/>
 </template>
 
 <script>
-import LandingView from './views/LandingView.vue';
-import AboutView from './views/AboutView.vue';
-
 export default {
-  components: {
-    AboutView,
-    LandingView
-  }
-
+  name: 'App',
 }
 </script>
 
-<style>
-
-</style>

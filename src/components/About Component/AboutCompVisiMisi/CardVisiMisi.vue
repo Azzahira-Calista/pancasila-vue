@@ -1,7 +1,7 @@
 <template>
   <div class=" w-[29.6rem] h-80 bg-[#94A684] flex flex-col items-center align-middle rounded-2xl ">
-    <h1 class=" font-poppins font-bold text-3xl mt-6">{{ tittleCard }}</h1>
-    <p class=" font-inter text-base mx-10 mt-4">{{ descriptionCard }}</p>
+    <h1 class=" font-poppins text-white font-bold text-3xl mt-6">{{ tittleCard }}</h1>
+    <p class=" font-inter text-white text-base mx-10 mt-4">{{ descriptionCard }}</p>
   </div>
 </template>
 

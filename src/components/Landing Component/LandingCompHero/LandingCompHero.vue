@@ -2,7 +2,7 @@
   <div class="relative w-screen h-screen">
     <img class="absolute w-full h-full" :src="backgroundImage" :alt="backgroundImageText">
     <div class="absolute w-full h-full bg-black opacity-[0.35]"></div>
-    <NavbarComponentVue/>
+    
     <div class="pl-40 flex flex-col justify-center h-full w-full absolute">
       <h1 class="font-poppins font-bold text-4xl text-[#F1F1F1]">{{ titleOne }}</h1>
       <br>
@@ -13,6 +13,7 @@
       </p>
     </div>
 
+    <NavbarComponentVue/>
     
   </div>
 </template>

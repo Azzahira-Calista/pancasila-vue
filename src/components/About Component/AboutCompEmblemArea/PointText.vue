@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col">
-          <li :class="`text-[${pointColor}]`">
+    <div class="flex flex-col mb-1">
+          <li :class="`${pointColor} font-bold font-poppins text-lg`">
             {{ pointText }}
         </li>
-        <p> {{ descriptionText }}</p>
+        <p class="font-poppins"> {{ descriptionText }}</p>
     </div>
 </template>
 

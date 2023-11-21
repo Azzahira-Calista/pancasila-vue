@@ -1,17 +1,15 @@
 <template>
   <div
-    class="w-screen h-[40rem] flex flex-col items-center justify-center relative"
+    class="w-screen h-[45rem] flex flex-col items-center justify-center relative"
   >
     <div
       class="flex flex-col items-center justify-center absolute mx-[10.1rem]"
     >
-      <h1 class="font-poppins font-bold text-4xl text-subTittle">
+      <h1 class="font-poppins font-bold text-4xl text-subTittle mt-8">
         wisata Nusa Tenggara Timur
       </h1>
       <p class="my-8 text-center text-subTittle">
-        Provinsi yang terletak di bagian timur Indonesia, terdiri dari sejumlah
-        pulau besar dan kecil, termasuk Pulau Timor. Ibu kotanya adalah Kupang.
-        NTT memiliki keanekaragaman etnis, budaya, dan bahasa yang kaya.
+        "Menemukan Pesona Alami Tak Terlupakan: Petualangan Wisata di Nusa Tenggara Timur yang Luar Biasa Indah"
       </p>
       <div class="grid grid-cols-2 gap-12">
         <CardWisata
@@ -45,24 +43,24 @@ export default {
     return {
       data: [
         {
-          imageCard: require("@/assets/images/bg_landing_geography.png"),
+          imageCard: require("@/assets/images/wisata_komodoisland.png"),
           descriptionCard:
-            "Provinsi yang terletak di bagian timur Indonesia, ksajkouubdjs ijifdjdufhh dhojdhkjkjnjk ",
+            "Pulau Komodo dikenal sebagai habitat asli hewan komodo.",
         },
         {
-          imageCard: require("@/assets/images/bg_landing_geography.png"),
+          imageCard: require("@/assets/images/wisata_sumba.png"),
           descriptionCard:
-            "Provinsi yang terletak di bagian timur Indonesia, ksajkouubdjs ijifdjdufhh dhojdhkjkjnjk ",
+            "Pulau Sumba memiliki bentang alam yang didominasi padang rumput dan kaya akan keragaman hayati.",
         },
         {
-          imageCard: require("@/assets/images/bg_landing_geography.png"),
+          imageCard: require("@/assets/images/wisata_labuanbajo.png"),
           descriptionCard:
-            "Provinsi yang terletak di bagian timur Indonesia, ksajkouubdjs ijifdjdufhh dhojdhkjkjnjk ",
+            "Labuan Bajo merupakan sebuah surga tersembunyi yang ada di Indonesia bagian timur.",
         },
         {
-          imageCard: require("@/assets/images/bg_landing_geography.png"),
+          imageCard: require("@/assets/images/wisata_pinkbeach.png"),
           descriptionCard:
-            "Provinsi yang terletak di bagian timur Indonesia, ksajkouubdjs ijifdjdufhh dhojdhkjkjnjk ",
+            "Pantai Pink ini memiliki pasir berwarna pink yang indah dan menjadi salah satu keunikan yang jarang ditemukan di dunia.",
         },
       ],
     };

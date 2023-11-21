@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-row mb-8">
-    <img class="w-14 h-14 mr-4" :src="imageCard" />
+  <div class="flex flex-row mb-8 w-96">
+    <img class="w-14 h-14 mr-4 rounded-xl" :src="imageCard" />
     <p class="font-inter font-normal text-base text-[#6F6E6E]">
       {{ descriptionCard }}
     </p>

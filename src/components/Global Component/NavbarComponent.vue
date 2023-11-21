@@ -14,7 +14,7 @@
         </h2>
       </router-link>
 
-      <router-link to="/">
+      <router-link to="/tour">
         <h2 class="text-[#DBEDDA] font-semibold font-prompt text-2xl">
           Wisata
         </h2>
